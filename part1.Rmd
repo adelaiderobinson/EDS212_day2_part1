@@ -53,4 +53,7 @@ eval(dg_dz)
 -   yes twice it will restart and be committed this is creating a git repository on our computer this still only exists on our computer
 -   usethis::use_github, saves it on github
 -   as soon as you make changes and save, you should see the file in the git tab. rmd means it has been modified
--    first send changes to local git repo, staging is the process of saying what you are ready to send to local git at this point
+-   first send changes to local git repo, staging is the process of saying what you are ready to send to local git at this point. click on the check. and commit, add a commit message and close it
+-   there is now a messae saying "your branch is ahead of origin/master by 1 commit. meaning it is only stored locally but not on github
+-   we need to  **push**  these changes
+-    push the upper green arrow
