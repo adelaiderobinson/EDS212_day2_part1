@@ -57,3 +57,5 @@ eval(dg_dz)
 -   there is now a messae saying "your branch is ahead of origin/master by 1 commit. meaning it is only stored locally but not on github
 -   we need to  **push**  these changes
 -    push the upper green arrow
+-    git and github are not tied to rstudio
+-    one example of a workflow where you are the only one making changes 
