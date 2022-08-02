@@ -43,4 +43,8 @@ dg_dz <- D(gz , "z")
 z <- seq(from = -3, to = 4 , by = 0.5)
 eval(dg_dz)
 ```
+#Notes on using github
+making a non version controlled project into a version controlled project
+in the console type usethis::use_git
+make sure it is locally controlled
 
