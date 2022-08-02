@@ -59,3 +59,4 @@ eval(dg_dz)
 -    push the upper green arrow
 -    git and github are not tied to rstudio
 -    one example of a workflow where you are the only one making changes 
+
