@@ -1,0 +1,46 @@
+---
+title: "eds212-day2-part1"
+author: "Adelaide Robinson"
+date: '2022-08-02'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Derivates in R
+
+# find the derivative of $$f(x) = 5x^2$$
+
+dollar signs allow blocking
+
+```{r}
+#options for derivatives
+#steps : 
+# write evaluated expression
+#define it using the derivative function
+#assign a value to x and then evaluate
+#you can also create a sequence of values for x and plug it in
+ex_1 <- expression( 5 * x ^ 2)
+my_derivative <- deriv(ex_1 , "x")
+# I want to find the slope @ x=2.8
+#assign the value to x 
+x <-2.8
+eval(my_derivative)
+
+```
+
+## Find the derivative a second way
+
+Find the slope of $g(z) = 2 z^3 -10.5z^2 +4.1$
+```{r}
+gz <- expression(2 * z ^ 3 -10.5 * z ^2 +4.1)
+#find the derivative
+dg_dz <- D(gz , "z")
+#gives a simpler output
+# evaluate the slope over a sequence of values
+z <- seq(from = -3, to = 4 , by = 0.5)
+eval(dg_dz)
+```
+
