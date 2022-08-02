@@ -7,4 +7,13 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
 ```
+Scatterplot of body mass versus flipper length
+```{r}
+ggplot(data = penguins ,  mapping = aes(x = body_mass_g , y = flipper_length_mm)) + 
+  geom_point(aes(color = species), size = 4)  #change the color of the points based on variable value, this goes within aes
+#if you want to change something not based on a variable it doesn't go within aes, size =4, otherwise you will get an extra annoying legend
+```
+
