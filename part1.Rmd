@@ -34,6 +34,7 @@ eval(my_derivative)
 ## Find the derivative a second way
 
 Find the slope of $g(z) = 2 z^3 -10.5z^2 +4.1$
+
 ```{r}
 gz <- expression(2 * z ^ 3 -10.5 * z ^2 +4.1)
 #find the derivative
@@ -43,8 +44,13 @@ dg_dz <- D(gz , "z")
 z <- seq(from = -3, to = 4 , by = 0.5)
 eval(dg_dz)
 ```
-#Notes on using github
-making a non version controlled project into a version controlled project
-in the console type usethis::use_git
-make sure it is locally controlled
 
+# Notes on using github
+
+## making a non version controlled project into a version controlled project
+
+-   in the console type usethis::use_git make sure it is locally controlled
+-   yes twice it will restart and be committed this is creating a git repository on our computer this still only exists on our computer
+-   usethis::use_github, saves it on github
+-   as soon as you make changes and save, you should see the file in the git tab. rmd means it has been modified
+-    first send changes to local git repo, staging is the process of saying what you are ready to send to local git at this point
